@@ -2,7 +2,7 @@
 import { ref, nextTick } from 'vue';
 
 const isVisible = ref(true);
-var maxRandomRespawnTime = 5;
+var maxRandomRespawnTime = 3;
 
 function handleClick() {
   isVisible.value = !isVisible.value;
