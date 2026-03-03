@@ -2,11 +2,14 @@
 import { ref, nextTick } from 'vue';
 
 const isVisible = ref(true);
+const maxRandomRespawnTime = 3;
 
 function handleClick() {
   isVisible.value = !isVisible.value;
 
-  // wait 3 sec and make it re-appear 
+  // wait a random amount of seconds and make it re-appear
+  const randomRespawnTime = Math.floor(Math.random() * maxRandomRespawnTime) + 1;
+  console.log("Pichu will re-appear in: " + randomRespawnTime + " seconds...");
   setTimeout(async () => {
     isVisible.value = true;
     
@@ -24,7 +27,7 @@ function handleClick() {
     img.style.left = `${x}px`;
     img.style.top = `${y}px`;
 
-  }, 1000);
+  }, randomRespawnTime * 1000);
 }
 </script>
 
