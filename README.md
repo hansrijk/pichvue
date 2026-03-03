@@ -1,4 +1,18 @@
 # Pichvue
 Pichu with Vue.js
 
-Powered by Github Copilot & Nintendo
+Alle rechten aan Github Copilot & Nintendo blablabla
+
+Pichvue: github.com/hansrijk/pichvue
+
+- Respawn timer moet willekeurig
+- Score bijhouden tijdens het spel
+- Scorebord toevoegen
+	- Speler vult naam in na het spel
+- Score moet worden opgeslagen op server
+- Gebruiker moet kunnen inloggen 
+	- Account aanmaken
+	- ...?
+- AI toevoegen (berekent je toekomstige score) -> om investeerders te lokken
+- Beveiliging (anti hack). Recaptcha? Fake robot scan? Hidden buttons (robots klikken erop)?
+- ...?
