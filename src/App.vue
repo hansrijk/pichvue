@@ -2,11 +2,14 @@
 import { ref, nextTick } from 'vue';
 
 const isVisible = ref(true);
+var maxRandomRespawnTime = 5
 
 function handleClick() {
   isVisible.value = !isVisible.value;
 
-  // wait 3 sec and make it re-appear 
+  // wait a random amount of seconds and make it re-appear
+  var randomRespawnTime = Math.floor(Math.random() * maxRandomRespawnTime)
+  console.log(randomRespawnTime)
   setTimeout(async () => {
     isVisible.value = true;
     
@@ -24,7 +27,7 @@ function handleClick() {
     img.style.left = `${x}px`;
     img.style.top = `${y}px`;
 
-  }, 1000);
+  }, randomRespawnTime * 1000);
 }
 </script>
 
