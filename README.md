@@ -3,7 +3,6 @@ Pichu with Vue.js
 
 Alle rechten aan Github Copilot & Nintendo blablabla
 
-- Respawn timer moet willekeurig
 - Score bijhouden tijdens het spel
 - Scorebord toevoegen
 	- Speler vult naam in na het spel
